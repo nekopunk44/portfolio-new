@@ -15,7 +15,7 @@
 python3 -m http.server 8000
 ```
 
-Для публикации подойдёт GitHub Pages (Settings → Pages → Deploy from branch → `main`, папка `/`), Vercel или Cloudflare Pages.
+Сайт публикуется на Cloudflare Workers как статика: `wrangler.jsonc` отдаёт корень репозитория, служебные файлы исключены в `.assetsignore`. Сборка не нужна, деплой командой `npx wrangler deploy`.
 
 ## Структура
 
